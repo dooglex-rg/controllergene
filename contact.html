@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ControllerGene</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>ControllerGene</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="features.html" class="nav-link">Features</a></li>
+                <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="signin.html" class="nav-link btn-signin">Sign In</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="padding: 120px 0 60px; min-height: auto;">
+        <div class="container">
+            <div class="hero-content" style="grid-template-columns: 1fr; text-align: center; gap: 2rem;">
+                <div class="hero-text">
+                    <h1>Contact ControllerGene</h1>
+                    <p>Get in touch with our team for support, questions, or enterprise solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section style="padding: 60px 0;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1000px; margin: 0 auto;">
+                
+                <!-- Contact Form -->
+                <div style="background: white; border-radius: var(--border-radius-lg); padding: 3rem; box-shadow: var(--shadow-lg);">
+                    <h2 style="color: var(--text-primary); margin-bottom: 1.5rem;">Send us a Message</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">Fill out the form below and we'll get back to you within 24 hours.</p>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company/Organization</label>
+                            <input type="text" id="company" name="company" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" class="form-control" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="pricing">Pricing Question</option>
+                                <option value="enterprise">Enterprise Solutions</option>
+                                <option value="billing">Billing Support</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required placeholder="Please describe your inquiry or question in detail..."></textarea>
+                        </div>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <label style="display: flex; align-items: flex-start; gap: 0.5rem; color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5;">
+                                <input type="checkbox" id="newsletter" name="newsletter" style="margin-top: 0.2rem;">
+                                I would like to receive updates about ControllerGene services and offers
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <span id="submitText">Send Message</span>
+                            <span id="submitLoader" class="loading" style="display: none;"></span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <div style="background: white; border-radius: var(--border-radius-lg); padding: 2.5rem; box-shadow: var(--shadow-lg); margin-bottom: 2rem;">
+                        <h2 style="color: var(--text-primary); margin-bottom: 1.5rem;">Get in Touch</h2>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <div style="width: 50px; height: 50px; background: linear-gradient(145deg, var(--primary-color), var(--accent-color)); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-envelope" style="color: white; font-size: 1.2rem;"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin: 0; color: var(--text-primary);">Email</h4>
+                                    <p style="margin: 0; color: var(--text-secondary);">support@controllergene.in</p>
+                                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">sales@controllergene.in</p>
+                                </div>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <div style="width: 50px; height: 50px; background: linear-gradient(145deg, var(--success-color), #34d399); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-phone" style="color: white; font-size: 1.2rem;"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin: 0; color: var(--text-primary);">Phone</h4>
+                                    <p style="margin: 0; color: var(--text-secondary);">+91 8667222107</p>
+                                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">Mon-Fri, 9 AM - 6 PM IST</p>
+                                </div>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                                <div style="width: 50px; height: 50px; background: linear-gradient(145deg, var(--warning-color), #fbbf24); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-clock" style="color: white; font-size: 1.2rem;"></i>
+                                </div>
+                                <div>
+                                    <h4 style="margin: 0; color: var(--text-primary);">Business Hours</h4>
+                                    <p style="margin: 0; color: var(--text-secondary);">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">Saturday: 10:00 AM - 2:00 PM IST</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="background: var(--bg-secondary); padding: 1.5rem; border-radius: var(--border-radius); border-left: 4px solid var(--primary-color);">
+                            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-primary);">24/7 Emergency Support</h4>
+                            <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">For critical data recovery issues or urgent technical support, contact our emergency hotline.</p>
+                        </div>
+                    </div>
+
+                    <!-- Company Information -->
+                    <div style="background: white; border-radius: var(--border-radius-lg); padding: 2.5rem; box-shadow: var(--shadow-lg);">
+                        <h3 style="color: var(--text-primary); margin-bottom: 1rem;">Company Information</h3>
+                        <div style="color: var(--text-secondary); line-height: 1.8;">
+                            <p style="margin-bottom: 0.5rem;"><strong>Company:</strong> DOOGLEX TECHNOLOGIES LLP</p>
+                            <p style="margin-bottom: 0.5rem;"><strong>Website:</strong> controllergene.in</p>
+                            <p style="margin-bottom: 1rem;"><strong>Service:</strong> Professional LTO Tape Backup Solutions</p>
+                            
+                            <div style="margin-top: 1.5rem;">
+                                <h4 style="color: var(--text-primary); margin-bottom: 1rem;">Follow Us</h4>
+                                <div style="display: flex; gap: 1rem;">
+                                    <a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: var(--primary-color); color: white; border-radius: 50%; text-decoration: none; transition: var(--transition);">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: var(--primary-color); color: white; border-radius: 50%; text-decoration: none; transition: var(--transition);">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="#" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: var(--primary-color); color: white; border-radius: 50%; text-decoration: none; transition: var(--transition);">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section style="padding: 80px 0; background: var(--bg-secondary);">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem;">Common Questions</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                
+                <div style="background: white; border-radius: var(--border-radius); padding: 2rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-md);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
+                        <i class="fas fa-question-circle"></i> How quickly can I get started?
+                    </h3>
+                    <p style="color: var(--text-secondary); margin: 0; line-height: 1.6;">
+                        You can create an account and start uploading data immediately. Processing typically takes 24-48 hours after payment confirmation, with express options available.
+                    </p>
+                </div>
+                
+                <div style="background: white; border-radius: var(--border-radius); padding: 2rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-md);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
+                        <i class="fas fa-question-circle"></i> What if I need help during upload?
+                    </h3>
+                    <p style="color: var(--text-secondary); margin: 0; line-height: 1.6;">
+                        Our technical support team is available during business hours to assist with uploads, troubleshooting, and any technical questions you may have.
+                    </p>
+                </div>
+                
+                <div style="background: white; border-radius: var(--border-radius); padding: 2rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-md);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
+                        <i class="fas fa-question-circle"></i> Do you offer enterprise solutions?
+                    </h3>
+                    <p style="color: var(--text-secondary); margin: 0; line-height: 1.6;">
+                        Yes! We provide custom enterprise solutions including bulk pricing, dedicated account management, and integration services. Contact our sales team for details.
+                    </p>
+                </div>
+                
+                <div style="background: white; border-radius: var(--border-radius); padding: 2rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-md);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
+                        <i class="fas fa-question-circle"></i> Can you help with data recovery from existing tapes?
+                    </h3>
+                    <p style="color: var(--text-secondary); margin: 0; line-height: 1.6;">
+                        Yes, we offer data recovery services from LTO tapes. Contact our technical support team to discuss your specific recovery needs and requirements.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success/Error Messages -->
+    <div id="messageContainer" style="position: fixed; top: 100px; right: 20px; z-index: 1001; max-width: 400px;"></div>
+
+    <!-- Footer -->
+    <footer class="footer" style="padding: 40px 0 20px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; align-items: center; margin-bottom: 1.5rem;">
+                <div>
+                    <h3 style="color: var(--accent-color); margin-bottom: 0.5rem; font-size: 1.3rem;">ControllerGene</h3>
+                    <p style="color: var(--text-light); margin: 0; font-size: 0.9rem;">Professional LTO tape backup services by DOOGLEX TECHNOLOGIES LLP</p>
+                </div>
+                <div style="display: flex; gap: 2rem; justify-content: flex-end;">
+                    <div>
+                        <a href="features.html" style="color: var(--text-light); text-decoration: none; font-size: 0.9rem; margin-right: 1rem;">Features</a>
+                        <a href="pricing.html" style="color: var(--text-light); text-decoration: none; font-size: 0.9rem; margin-right: 1rem;">Pricing</a>
+                        <a href="contact.html" style="color: var(--text-light); text-decoration: none; font-size: 0.9rem;">Contact</a>
+                    </div>
+                    <div>
+                        <a href="privacy.html" style="color: var(--text-light); text-decoration: none; font-size: 0.9rem; margin-right: 1rem;">Privacy</a>
+                        <a href="terms.html" style="color: var(--text-light); text-decoration: none; font-size: 0.9rem;">Terms</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const loader = document.getElementById('submitLoader');
+            const text = document.getElementById('submitText');
+            
+            loader.style.display = 'inline-block';
+            text.style.display = 'none';
+            
+            // Simulate API call
+            setTimeout(() => {
+                loader.style.display = 'none';
+                text.style.display = 'inline';
+                showMessage('Thank you for your message! We\'ll get back to you within 24 hours.', 'success');
+                document.getElementById('contactForm').reset();
+            }, 2000);
+        });
+
+        function showMessage(message, type) {
+            const container = document.getElementById('messageContainer');
+            const alert = document.createElement('div');
+            alert.className = `alert alert-${type}`;
+            alert.textContent = message;
+            alert.style.marginBottom = '1rem';
+            
+            container.appendChild(alert);
+            
+            setTimeout(() => {
+                alert.remove();
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
